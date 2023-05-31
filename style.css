@@ -1,0 +1,421 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-wrap: wrap;
+	color: #fff;  
+    font-size: 16px; 
+    font-weight: 400; 
+    overflow-x: hidden;
+	/* flex: 1 1 100vw;
+	margin: 3px; */
+}
+body, header, nav, main, footer {
+	display: flex;
+	background: rgb(34,40,255);
+    background: linear-gradient(90deg, rgba(34,40,255,1) 0%, rgba(6,1,147,1) 30%, rgba(131,0,7,1) 70%, rgba(247,41,41,1) 100%);
+	/* margin: 3px; */
+}
+
+header {
+	flex: 1 1 100vw;
+}
+
+header #logo {
+	display: flex;
+	background-color: #2228ff;
+	flex: 0 1 50px;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo__img {
+    width: 75px;
+	margin: 10px 45px 10px 45px;
+}
+
+#openMenu, #closeMenu {
+	border: none;
+	background: none;
+	font-size: 30px;
+	font-weight: bold;
+	padding: 0px 5px 0px 5px;
+	cursor: pointer;
+	display: none;
+}
+
+nav {
+    color: #000;
+	justify-content: flex-end;
+	align-items: center;
+	flex: 1 1 200px;
+}
+
+nav a {
+	margin: 0 3%;
+	font-size: 15pt;
+	color: white;
+}
+
+nav a:hover {
+	border-bottom: 2px solid #daa520;
+}
+
+.img_fundo { 
+    width: 100%;
+    background-image: url(https://i.im.ge/2023/05/18/UnKiIc.Galera1.jpg);
+    background-repeat: no-repeat; 
+    background-size: contain; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.container-secundario {
+	margin-top: 50%;
+}
+
+@media only screen and (max-width: 717px) {
+	#openMenu, #closeMenu {
+		display: block;
+	}
+
+	#openMenu {
+		margin-left: auto;
+	}
+
+	#closeMenu {
+		position: fixed;
+		right: 15px;
+		top: 15px;
+	}
+
+	nav {
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		background: rgba(255, 255, 255, 0.8);
+		flex-direction: column;
+		align-items: center;
+
+
+		justify-content: center;
+		margin: 0;
+		display: none;
+		opacity: 0;
+		transition: 0.3s;
+	}
+
+	nav a {
+		margin: 3%;
+	}
+}
+
+/* Estilização >>>>>Temporada<<<<< */
+
+/* body { 
+    background: rgb(34,40,255);
+    background: linear-gradient(90deg, rgba(34,40,255,1) 0%, rgba(6,1,147,1) 30%, rgba(131,0,7,1) 70%, rgba(247,41,41,1) 100%);
+    color: #fff;  
+    font-size: 16px; 
+    font-weight: 400; 
+    overflow-x: hidden;
+} */
+
+
+table {
+    width: 100vw;
+    text-align: center;
+}
+
+.cabecalho {
+    color: var(--branco-principal);
+    border-collapse: collapse;
+    font-size: 0.75em;
+}
+
+#logo td {
+    height: 48px;
+    padding-top: 4px;
+}
+
+td {
+    height: 50px;
+    width: 104px;
+}
+
+.logo__tabela {
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+}
+
+.nav-conteudo__lateral {
+    width: 30%;
+}
+
+.nav__destacada:hover {
+    text-decoration: none;
+    border-bottom: 3px solid var(--branco-principal);
+    border-bottom: 2px solid #daa520;
+    cursor: pointer;
+}
+
+.texto__menu {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+}
+
+/* Estatisticas - Tabela */
+
+.classificacao {
+    
+    border-top: none;
+    border-bottom: none;
+    width: 100vw;
+    font-size: 1em;
+    
+    margin-top: 2px;
+}
+
+#clasificacao__titulo {
+    padding: 15px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.classificacao th{
+    border-top: 3px solid #E0E0E0;
+    font-weight: 100;
+    color: #fff;
+    padding: 4px;
+    height: 35px;
+}
+
+.classificacao td{
+    border-top: 3px solid #E0E0E0;
+    border-bottom: 3px solid #E0E0E0;
+    font-weight: 100;
+    color: #fff;
+    padding: 4px;
+    height: 45px;
+    font-size: 1.2em;
+}
+
+#temporada {
+    font-weight: 600;
+    color: rgb(28, 240, 60);
+}
+
+#temporada__atual {
+    text-decoration: none;
+    color: var(--cinza-secundario);
+}
+
+.classificacao img {
+    width: 25px;
+}
+
+.tabela-colunas__bordas {
+    border-top: none !important;
+}
+
+.titulo__time {
+    width: 50%;
+    text-align: left;
+}
+
+/*Estatisticas Jogadores*/
+
+.jogadores {
+    border-top: none;
+    border-bottom: none;
+    width: 50vw;
+    font-size: 1em;
+    border-collapse: collapse;
+    margin-top: 5px;
+}
+
+.jogadores th{
+    font-weight: 100;
+    color: #fff;
+    padding: 4px;
+    height: 18px;
+}
+
+.jogadores td{
+    font-weight: 100;
+    color: #fff;
+    padding: 4px;
+    height: 20px;
+    font-size: 1em;
+}
+
+.titulo__jogadores {
+    width: 50%;
+    text-align: left;
+}
+
+/* PARTIDAS */
+.calendario_titulo{
+    text-align: center;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    padding: 8px;
+    margin-top: 50px;
+}
+
+.partidas{
+    width: 80%;
+    margin: auto;
+    margin-block: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 10px;
+}
+
+h3, h4 ,h6 {
+    text-align: center;
+}
+
+p {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+h5 {
+    font-weight: 700;
+}
+
+.partidas div {
+    background-color: #ffffffd0;
+    color: #000;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.jogo {
+    background-color: #ffffffb9;
+    border-radius: 16px;
+    padding-block: 5px;
+    margin-block: 0.5rem;
+}
+
+.logo__partida {
+    width: 30px;
+}
+
+/* Estilização >>>>>Historia<<<<< */
+
+.historia {
+    width: 60vw;
+    margin: 30px auto;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: var(--fonte-principal);
+    border: 2px solid #daa520;
+    border-radius: 28px;
+}
+
+.historia__titulo {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.historia__texto {
+    text-align: justify;
+    margin: 10px 50px 10px 50px;
+}
+
+.historia__fundador, .historia__emblemas, .historia__logo{
+    width: 250px;
+    display: block;
+    margin: 15px auto 5px;
+}
+
+.fundador {
+    margin: 0 auto;
+}
+
+.historia-fundador__descricao {
+    width: 60vw;
+    margin: 30px auto;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.historia__links {
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin: 30px;
+}
+
+.mebros__diretoria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.historia__diretoria {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px auto 5px;
+    padding: 15px;
+}
+
+
+
+/* Estilização >>>>>Footer<<<<< */
+
+footer {
+	flex: 100vw;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.rodape {
+	border: 2px solid #daa520;
+	border-radius: 16px;
+	width: 90%;
+	margin: 50px auto;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.redes__contatos img {
+	width: 80px;
+	padding: 20px;
+}
+
+.contato__descricao {
+    font-size: 12px;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.logo__patrocinadores {
+	width: 150px;
+	padding: 15px;
+}
+
+
